@@ -1,0 +1,207 @@
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: white;
+}
+
+/* ================= HOME PAGE ================= */
+.home {
+    height: 100vh;
+    background: url("/static/Home page weather.png") no-repeat center center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+/* Dark overlay for readability */
+.home::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.home * {
+    position: relative;
+}
+
+/* WEATHER TITLE */
+.home h1 {
+    font-size: 64px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #ffffff;
+
+    text-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.6),
+        0 8px 25px rgba(0, 0, 0, 0.4);
+
+    margin-bottom: 30px;
+}
+
+/* ================= WEATHER PAGE ================= */
+.weather {
+    min-height: 100vh;
+    background: url("/static/cast image.png") no-repeat center center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+/* City name */
+.weather h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Date */
+.weather h3 {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 25px;
+}
+
+/* MAIN TEMPERATURE */
+.main-temp {
+    font-size: 72px;
+    font-weight: 900;
+    margin: 10px 0;
+
+    text-shadow:
+        0 6px 15px rgba(0,0,0,0.6),
+        0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* Weather description */
+.weather p {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+/* ================= FORECAST ================= */
+.forecast {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Forecast cards */
+.card {
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(6px);
+
+    padding: 18px;
+    border-radius: 14px;
+    width: 140px;
+
+    font-weight: 600;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+
+/* ================= ERROR PAGE ================= */
+
+.error {
+    min-height: 100vh;
+    background: url("/static/error.png") no-repeat center center;
+    background-size: contain;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    color: #0dade2;
+    padding: 40px;
+}
+
+/* 404 number */
+.error h1 {
+    font-size: 96px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+/* Error message */
+.error h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Change city link */
+.error a {
+    font-size: 18px;
+    font-weight: 700;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.error a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= FORM ================= */
+input {
+    padding: 14px;
+    width: 260px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+
+    outline: none;
+}
+
+button {
+    padding: 14px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    background: #1e90ff;
+    color: white;
+
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0b5ed7;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="home">
+
+    <h1>Weather</h1>
+
+    <form method="post">
+        <input type="text" name="city" placeholder="Search for a city" required>
+        <button type="submit">Search</button>
+    </form>
+
+</body>
+</html>

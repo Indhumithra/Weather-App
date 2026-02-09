@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Cast</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="weather">
+
+    <a href="/">← Change City</a>
+
+    <h1>{{ city }}, {{ country }}</h1>
+    <h3>{{ date }}</h3>
+
+    <div class="main-temp">{{ temp }}°C</div>
+    <p>{{ desc }}</p>
+    <p>Wind: {{ wind }} m/s</p>
+
+    <h2>5-Day Forecast</h2>
+
+    <div class="forecast">
+        {% for day in forecast %}
+        <div class="card">
+            <p>{{ day.dt_txt[:10] }}</p>
+            <p>{{ day.main.temp }}°C</p>
+            <p>{{ day.weather[0].description }}</p>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
