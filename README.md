@@ -1,5 +1,6 @@
 
-# 🌦 Weather App (Python Flask Project)
+# 🌦 Weather App (Python Flask Project) 
+live :http://127.0.0.1:5000
 
 ## 📌 Overview
 
@@ -89,7 +90,7 @@ API_KEY = "your_api_key_here"
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/weather-app.git
+git clone https://github.com/Indhumithra/weather-app.git
 cd weather-app
 ```
 
@@ -190,5 +191,5 @@ The page uses a visually appealing background image and bold typography for bett
 If a user enters an invalid city name, a custom error page is displayed with a **404-style message** informing the user that the city does not exist and providing an option to return and try again.
 
 ---
-
+Live : http://127.0.0.1:5000
 
