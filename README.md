@@ -1,6 +1,6 @@
 
 # 🌦 Weather App (Python Flask Project) 
-live :http://127.0.0.1:5000
+
 
 ## 📌 Overview
 
@@ -191,5 +191,4 @@ The page uses a visually appealing background image and bold typography for bett
 If a user enters an invalid city name, a custom error page is displayed with a **404-style message** informing the user that the city does not exist and providing an option to return and try again.
 
 ---
-Live : http://127.0.0.1:5000
 
