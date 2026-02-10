@@ -4,7 +4,7 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-API_KEY = "28491ae5148ab30cd6fee86750eac50e"
+API_KEY = "KEY"
 CURRENT_URL = "https://api.openweathermap.org/data/2.5/weather"
 FORECAST_URL = "https://api.openweathermap.org/data/2.5/forecast"
 
@@ -42,3 +42,4 @@ def home():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
